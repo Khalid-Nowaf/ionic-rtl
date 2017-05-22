@@ -17,8 +17,5 @@ export class HomePage {
     this.platform.setDir(this.dir,true);
   }
 
-  toggleKeyboard(){
-
-  }
 
 }
