@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,Platform } from 'ionic-angular';
+import { Keyboard } from 'ionic-native';
 
 @Component({
   selector: 'page-home',
@@ -14,6 +15,10 @@ export class HomePage {
   changeDir(){
     this.dir = this.dir == 'RTL' ? 'LTR' : 'RTL';
     this.platform.setDir(this.dir,true);
+  }
+
+  toggleKeyboard(){
+
   }
 
 }
