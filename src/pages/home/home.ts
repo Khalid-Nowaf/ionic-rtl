@@ -9,11 +9,11 @@ import { Keyboard } from 'ionic-native';
 export class HomePage {
   dir:string;
   constructor(private navCtrl: NavController, private platform:Platform) {
-    this.dir = 'RTL';
+    this.dir = this.platform.dir().toLowerCase();
   }
 
   changeDir(){
-    this.dir = this.dir == 'RTL' ? 'LTR' : 'RTL';
+    this.dir = this.dir == 'rtl' ? 'ltr' : 'rtl';
     this.platform.setDir(this.dir,true);
   }
 
